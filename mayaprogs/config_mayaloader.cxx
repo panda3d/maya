@@ -16,7 +16,7 @@
 #endif
 
 #include "pandatoolbase.h"
-#include "loaderFileTypePandatool.h"
+//#include "loaderFileTypePandatool.h"
 #include "config_mayaegg.h"
 #include "mayaToEggConverter.h"
 
@@ -45,11 +45,11 @@ init_libmayaloader() {
   }
   initialized = true;
 
-  LoaderFileTypePandatool::init_type();
+  //LoaderFileTypePandatool::init_type();
 
   LoaderFileTypeRegistry *reg = LoaderFileTypeRegistry::get_global_ptr();
 
   init_libmayaegg();
   MayaToEggConverter *maya = new MayaToEggConverter;
-  reg->register_type(new LoaderFileTypePandatool(maya));
+  //reg->register_type(new LoaderFileTypePandatool(maya));
 }
