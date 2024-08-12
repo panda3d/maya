@@ -21,6 +21,10 @@
 #include "pmap.h"
 #include "pvector.h"
 
+#include "pre_maya_include.h"
+#include <maya/MObject.h>
+#include "post_maya_include.h"
+
 class MayaShader;
 class MayaShaderColorDef;
 typedef pvector<MayaShaderColorDef *> MayaShaderColorList;
